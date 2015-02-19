@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>814baf63-bbd7-4ae1-b536-7190021e9ec8</SharedGUID>
+    <ItemsProjectGuid>{d11dfd65-e69d-42ec-b904-1ce2d0f54bc3}</ItemsProjectGuid>
+    <ItemsRootNamespace>EngineLauncher</ItemsRootNamespace>
+    <ItemsProjectName>Dive.Shared</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)app.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Common\DeviceResources.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DiveMain.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FBXManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FBXSceneCache.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FBXSceneContext.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Sample3DRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SampleFPSTextRenderer.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)app.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common\DeviceResources.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common\directxhelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common\StepTimer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DiveMain.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FBXManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FBXSceneCache.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FBXSceneContext.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Sample3DRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SampleFPSTextRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ShaderStructures.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="$(MSBuildThisFileDirectory)SamplePixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)SampleVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+</Project>

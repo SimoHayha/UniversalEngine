@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CLCompile Include="$(MSBuildThisFileDirectory)pch.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)app.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Common\DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DiveMain.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Sample3DRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SampleFPSTextRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)FBXManager.cpp">
+      <Filter>Format\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)FBXSceneContext.cpp">
+      <Filter>Format\FBX</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)FBXSceneCache.cpp">
+      <Filter>Format\FBX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)app.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common\DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DiveMain.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Sample3DRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ShaderStructures.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common\directxhelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SampleFPSTextRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)FBXManager.h">
+      <Filter>Format\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)FBXSceneContext.h">
+      <Filter>Format\FBX</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)FBXSceneCache.h">
+      <Filter>Format\FBX</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{48c241e6-a51c-46e3-b024-c16c754f389d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{a86f8457-d1de-49ca-bbd7-80d2270c505b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Format">
+      <UniqueIdentifier>{e2aa16a6-a312-46e0-9855-68444cf28e46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Format\FBX">
+      <UniqueIdentifier>{5322f8b8-314a-4d81-a43b-bae0f179e847}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="$(MSBuildThisFileDirectory)SamplePixelShader.hlsl">
+      <Filter>Content</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)SampleVertexShader.hlsl">
+      <Filter>Content</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
